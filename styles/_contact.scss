@@ -1,0 +1,35 @@
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .contact-container{
+        .social-media{
+            display: flex;
+            justify-content: center;
+            .button{
+                width: 50px;
+                height: 50px;
+                background: #A1A1A1;
+                border: none;
+                font-size: 160%;
+                margin: 2% 1%;
+                color: #ffff;
+            }
+            .github:hover{
+                background: #000;
+            }
+            .linkedin:hover{
+                background: #0014BC;
+            }
+            .whatsapp:hover{
+                background: #139501;
+            }
+        }
+        .map{
+            width: 100%;
+            iframe{
+                max-width: 100%;
+            }
+        }
+    }
+}

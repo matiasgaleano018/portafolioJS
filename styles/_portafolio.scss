@@ -1,0 +1,41 @@
+.portafolio{
+    display: grid;
+    margin: 3% 4% 6% 4%;
+    grid-gap: 4.5%;
+    grid-template-columns: repeat(3, 30%);
+    .card{
+        background: #000798;
+        border-radius: 2%;
+        height: 105%;
+        transition: .5s all linear;
+        .card-img img{
+            max-width: 96%;
+            padding: 2% 2%;
+            filter: grayscale(1);
+            transition: .5s all linear;
+            z-index: -1;
+        }
+        p{
+            text-align: center;
+            color: #F1F1F1;
+        }
+    }
+    .card:hover{
+        transform: scale(1.03);
+        background: #0D16CB;
+    }
+    .card:hover > .card-img img{
+        filter: grayscale(0);
+    }
+}
+@media only screen and (max-width: 800px){
+    .portafolio{
+        grid-template-columns: repeat(1, 100%);
+        margin-bottom: 40%;
+        .card{
+            .card-img img{
+                filter: grayscale(0);
+            }
+        }
+    }
+}

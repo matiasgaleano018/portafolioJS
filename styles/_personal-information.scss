@@ -1,0 +1,72 @@
+$background-color: #ECECEC;
+.personal-information{
+    display: grid;
+    grid-template-columns: repeat(2, 40%);
+    margin: 4% 3%;
+    background: $background-color;
+    .personal-information-img img{
+        width: 85%;
+    }
+    .personal-information-container{
+        padding-top: 5%;
+        p{
+            font-size: 120%;
+            margin: 3% 0;
+        }
+        .skills{
+            display: grid;
+            grid-template-columns: repeat(2, 30%);
+            .skills-name{
+                font-size: 120%;
+            }
+            .stars{
+                color: #D9E700;
+                font-size: 105%;
+            }
+            ul{
+                list-style: none;
+            }
+        }
+        .CVbutton{
+            width: 35%;
+            height: 7%;
+            border: 2px solid #00015D;
+            border-radius: 18px;
+            color: #00015D;
+            font-size: 90%;
+            margin: 4% 2%;
+        }
+        .CVbutton:hover{
+            background: #00015D;
+            color: #ECECEC;
+        }
+    }
+}
+@media only screen and (max-width: 800px){
+    .personal-information{
+        grid-template-columns: repeat(1, 100%);
+        .personal-information-img img{
+            width: 100%;
+        }
+        .personal-information-container{
+            .CVbutton{
+                margin: 4% 25%;
+                width: 50%;
+                height: 10%;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 400px){
+    .personal-information{
+        .personal-information-container{
+            .skills{
+                grid-template-columns: repeat(2, 50%);
+            }
+            .CVbutton{
+                margin: 15% 25%;
+                width: 50%;
+            }
+        }
+    }
+}

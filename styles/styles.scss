@@ -1,0 +1,12 @@
+@import '_menu', '_banner', 'personal-information', '_portafolio', '_contact', '_footer';
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Nunito', sans-serif;
+}
+.section-title{
+    display: flex;
+    margin: 2% 4% 0 4%;
+}
