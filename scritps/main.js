@@ -12,16 +12,6 @@ menuButton.addEventListener("click", ()=>{
     }
 })
 
-/*Typed*/
-const typed = new Typed('.typed', {
-    strings : ['Frontend Dev', 'Diseñador Web', 'UI/UX Designer'],
-    typeSpeed : 75,
-    loop : true,
-    backDelay : 1000,
-    backSpeed : 100,
-    startDelay : 1000
-});
-
 /*Portafolio links */
 const tateti = document.getElementById("tatetigame");
 const dolarpy = document.getElementById("dolarpy");
