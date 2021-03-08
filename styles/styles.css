@@ -237,8 +237,17 @@
   margin: 4% 2%;
 }
 
+.personal-information .personal-information-container .CVbutton a {
+  text-decoration: none;
+  color: #00015D;
+}
+
 .personal-information .personal-information-container .CVbutton:hover {
   background: #00015D;
+  color: #ECECEC;
+}
+
+.personal-information .personal-information-container .CVbutton:hover > a {
   color: #ECECEC;
 }
 
