@@ -1,3 +1,11 @@
+const typed = new Typed('.typed', {
+    strings: ['Desarrollador', 'Frontend'],
+    typeSpeed: 75,
+    startDelay: 300,
+    backSpeed: 75,
+    loop: true
+})
+
 /*Menu desplegable */
 const menuButton = document.getElementById("menu-button");
 const navegation = document.querySelector(".header .container .navegation ul");
@@ -42,3 +50,7 @@ linkedin.addEventListener("click", ()=>{
 whatsapp.addEventListener("click", ()=>{
     window.open("https://wa.me/595986565897", "_blank")
 })
+
+
+/*typed */
+
