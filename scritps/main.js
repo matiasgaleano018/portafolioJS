@@ -24,7 +24,11 @@ menuButton.addEventListener("click", ()=>{
 const tateti = document.getElementById("tatetigame");
 const dolarpy = document.getElementById("dolarpy");
 const calculadora = document.getElementById("calculadora");
+const covid19page = document.getElementById("covid19mundo");
 
+covid19page.addEventListener("click", ()=>{
+    window.open("https://covid19cifras.netlify.app/", "_blank")
+})
 tateti.addEventListener("click", ()=>{
     window.open("https://matiasgaleano018.github.io/tatetiJS/", "_blank")
 })

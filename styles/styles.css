@@ -324,7 +324,7 @@
   .portafolio {
     -ms-grid-columns: (100%)[1];
         grid-template-columns: repeat(1, 100%);
-    margin-bottom: 40%;
+    margin-bottom: 60%;
   }
   .portafolio .card .card-img img {
     -webkit-filter: grayscale(0);
