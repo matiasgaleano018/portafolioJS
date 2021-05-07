@@ -185,6 +185,15 @@
   }
 }
 
+.personal-information-animation {
+  -webkit-animation-name: scrollanimation;
+          animation-name: scrollanimation;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
 .personal-information {
   display: -ms-grid;
   display: grid;
@@ -192,6 +201,7 @@
       grid-template-columns: repeat(2, 40%);
   margin: 4% 3%;
   background: #ECECEC;
+  opacity: 0;
 }
 
 .personal-information .personal-information-img img {
@@ -277,6 +287,31 @@
   }
 }
 
+@-webkit-keyframes scrollanimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes scrollanimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.portafolio-animation {
+  -webkit-animation-name: traslateanimation;
+          animation-name: traslateanimation;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
 .portafolio {
   display: -ms-grid;
   display: grid;
@@ -284,6 +319,8 @@
   grid-gap: 4.5%;
   -ms-grid-columns: (30%)[3];
       grid-template-columns: repeat(3, 30%);
+  -webkit-transform: translateY(70px);
+          transform: translateY(70px);
 }
 
 .portafolio .card {
@@ -324,11 +361,33 @@
   .portafolio {
     -ms-grid-columns: (100%)[1];
         grid-template-columns: repeat(1, 100%);
-    margin-bottom: 60%;
+    margin-bottom: 65%;
   }
   .portafolio .card .card-img img {
     -webkit-filter: grayscale(0);
             filter: grayscale(0);
+  }
+}
+
+@-webkit-keyframes traslateanimation {
+  0% {
+    -webkit-transform: translateY(70px);
+            transform: translateY(70px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes traslateanimation {
+  0% {
+    -webkit-transform: translateY(70px);
+            transform: translateY(70px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 

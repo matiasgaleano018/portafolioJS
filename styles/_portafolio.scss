@@ -1,8 +1,13 @@
+.portafolio-animation{
+    animation-name: traslateanimation;
+    animation-duration: 3s;
+}
 .portafolio{
     display: grid;
     margin: 3% 4% 6% 4%;
     grid-gap: 4.5%;
     grid-template-columns: repeat(3, 30%);
+    transform: translateY(70px);
     .card{
         background: #000798;
         border-radius: 2%;
@@ -37,5 +42,12 @@
                 filter: grayscale(0);
             }
         }
+    }
+}
+@keyframes traslateanimation {
+    0%{
+        transform: translateY(70px);
+    }100%{
+        transform: translateY(0);
     }
 }

@@ -1,9 +1,15 @@
 $background-color: #ECECEC;
+.personal-information-animation{
+    animation-name: scrollanimation;
+    animation-duration: 5s;
+    transition: all .5s;
+}
 .personal-information{
     display: grid;
     grid-template-columns: repeat(2, 40%);
     margin: 4% 3%;
     background: $background-color;
+    opacity: 0;
     .personal-information-img img{
         width: 85%;
     }
@@ -75,5 +81,12 @@ $background-color: #ECECEC;
                 width: 50%;
             }
         }
+    }
+}
+@keyframes scrollanimation {
+    0%{
+        opacity: 0;
+    }100%{
+        opacity: 1;
     }
 }

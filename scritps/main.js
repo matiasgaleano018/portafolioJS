@@ -1,3 +1,4 @@
+/*typed */
 const typed = new Typed('.typed', {
     strings: ['Desarrollador', 'Frontend'],
     typeSpeed: 75,
@@ -56,5 +57,20 @@ whatsapp.addEventListener("click", ()=>{
 })
 
 
-/*typed */
+/*Efectos scroll */
+const personalInformation = document.getElementById("personal-information")
+window.addEventListener("scroll", ()=>{
+    if(document.documentElement.scrollTop > personalInformation.offsetTop-600){
+        personalInformation.style.opacity = 1;
+        personalInformation.classList.add("personal-information-animation");
+    }
+})
 
+const portafolio = document.getElementById("portafolio");
+window.addEventListener("scroll", ()=>{
+    if(document.documentElement.scrollTop > portafolio.offsetTop-500){
+        portafolio.classList.add("portafolio-animation");
+        portafolio.style.transform = "translateY(0)";
+    }
+})
+console.log(portafolio.offsetTop)
