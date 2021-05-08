@@ -229,16 +229,12 @@
 }
 
 .personal-information .personal-information-container .skills .skills-name li {
-  padding: .5% 2%;
+  padding: .9% 2%;
 }
 
 .personal-information .personal-information-container .skills .stars {
   color: #D9E700;
-  font-size: 105%;
-}
-
-.personal-information .personal-information-container .skills .stars li {
-  padding: .75% 0%;
+  font-size: 130%;
 }
 
 .personal-information .personal-information-container .skills ul {
@@ -282,11 +278,8 @@
     width: 50%;
     height: 10%;
   }
-  .skills .skills-name li {
-    padding: .5% 2%;
-  }
-  .skills .stars ul li {
-    padding: .9%;
+  .personal-information .personal-information-container .skills .skills-name li {
+    padding: 1.5% 1%;
   }
 }
 
