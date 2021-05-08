@@ -21,13 +21,20 @@ $background-color: #ECECEC;
         }
         .skills{
             display: grid;
-            grid-template-columns: repeat(2, 30%);
+            grid-template-columns: repeat(2, 50%);
             .skills-name{
                 font-size: 120%;
+                li{
+                    padding: .5% 2%;
+                }
+
             }
             .stars{
                 color: #D9E700;
                 font-size: 105%;
+                li{
+                    padding: .75% 0%;
+                }
             }
             ul{
                 list-style: none;
@@ -66,6 +73,20 @@ $background-color: #ECECEC;
                 margin: 4% 25%;
                 width: 50%;
                 height: 10%;
+            }
+        }
+    }
+    .skills{
+        .skills-name{
+            li{
+                padding: .5% 2%;
+            }
+        }
+        .stars{
+            ul{
+                li{
+                    padding: .9%;
+                }
             }
         }
     }
