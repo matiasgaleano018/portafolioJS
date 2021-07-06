@@ -259,14 +259,16 @@
   .personal-information {
     -ms-grid-columns: (100%)[1];
         grid-template-columns: repeat(1, 100%);
-    padding: 10%;
   }
   .personal-information .personal-information-img img {
     width: 100%;
   }
+  .personal-information .personal-information-container {
+    padding: .5% 0 10% 0;
+  }
   .personal-information .personal-information-container .CVbutton {
     margin: 4% 25%;
-    width: 50%;
+    width: 90%;
     height: 10%;
   }
   .personal-information .personal-information-container .skills .skills-name li {
@@ -275,10 +277,6 @@
 }
 
 @media only screen and (max-width: 400px) {
-  .personal-information .personal-information-container .skills {
-    -ms-grid-columns: (50%)[2];
-        grid-template-columns: repeat(2, 50%);
-  }
   .personal-information .personal-information-container .CVbutton {
     margin: 15% 25%;
     width: 50%;

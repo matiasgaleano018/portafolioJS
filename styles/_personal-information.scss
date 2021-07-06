@@ -57,14 +57,14 @@ $background-color: #ECECEC;
 @media only screen and (max-width: 800px){
     .personal-information{
         grid-template-columns: repeat(1, 100%);
-        padding: 10%;
         .personal-information-img img{
             width: 100%;
         }
         .personal-information-container{
+            padding: .5% 0 10% 0;
             .CVbutton{
                 margin: 4% 25%;
-                width: 50%;
+                width: 90%;
                 height: 10%;
             }
             .skills{
@@ -80,9 +80,6 @@ $background-color: #ECECEC;
 @media only screen and (max-width: 400px){
     .personal-information{
         .personal-information-container{
-            .skills{
-                grid-template-columns: repeat(2, 50%);
-            }
             .CVbutton{
                 margin: 15% 25%;
                 width: 50%;
