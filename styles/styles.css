@@ -209,7 +209,7 @@
 }
 
 .personal-information .personal-information-container {
-  padding-top: 5%;
+  padding: 5% 1%;
 }
 
 .personal-information .personal-information-container p {
@@ -218,27 +218,17 @@
 }
 
 .personal-information .personal-information-container .skills {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (50%)[2];
-      grid-template-columns: repeat(2, 50%);
+  width: 100%;
 }
 
 .personal-information .personal-information-container .skills .skills-name {
-  font-size: 120%;
-}
-
-.personal-information .personal-information-container .skills .skills-name li {
-  padding: .9% 2%;
-}
-
-.personal-information .personal-information-container .skills .stars {
-  color: #D9E700;
-  font-size: 130%;
-}
-
-.personal-information .personal-information-container .skills ul {
   list-style: none;
+  padding: 1%;
+}
+
+.personal-information .personal-information-container .skills .skills-name li progress {
+  width: 100%;
+  height: 25px;
 }
 
 .personal-information .personal-information-container .CVbutton {
@@ -269,6 +259,7 @@
   .personal-information {
     -ms-grid-columns: (100%)[1];
         grid-template-columns: repeat(1, 100%);
+    padding: 10%;
   }
   .personal-information .personal-information-img img {
     width: 100%;
@@ -279,7 +270,7 @@
     height: 10%;
   }
   .personal-information .personal-information-container .skills .skills-name li {
-    padding: 1.5% 1%;
+    padding: .5% 0;
   }
 }
 

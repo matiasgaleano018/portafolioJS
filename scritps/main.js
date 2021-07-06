@@ -1,6 +1,6 @@
 /*typed */
 const typed = new Typed('.typed', {
-    strings: ['Desarrollador', 'Frontend'],
+    strings: ['Desarrollador', 'Web', 'Junior'],
     typeSpeed: 75,
     startDelay: 300,
     backSpeed: 75,

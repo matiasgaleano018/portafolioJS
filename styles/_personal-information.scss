@@ -14,27 +14,22 @@ $background-color: #ECECEC;
         width: 85%;
     }
     .personal-information-container{
-        padding-top: 5%;
+        padding: 5% 1%;
         p{
             font-size: 120%;
             margin: 3% 0;
         }
         .skills{
-            display: grid;
-            grid-template-columns: repeat(2, 50%);
+            width: 100%;
             .skills-name{
-                font-size: 120%;
-                li{
-                    padding: .9% 2%;
-                }
-
-            }
-            .stars{
-                color: #D9E700;
-                font-size: 130%;
-            }
-            ul{
                 list-style: none;
+                padding: 1%;
+                li{
+                    progress{
+                        width: 100%;
+                        height: 25px;
+                    }
+                }
             }
         }
         .CVbutton{
@@ -62,6 +57,7 @@ $background-color: #ECECEC;
 @media only screen and (max-width: 800px){
     .personal-information{
         grid-template-columns: repeat(1, 100%);
+        padding: 10%;
         .personal-information-img img{
             width: 100%;
         }
@@ -74,7 +70,7 @@ $background-color: #ECECEC;
             .skills{
                 .skills-name{
                     li{
-                        padding: 1.5% 1%;
+                        padding: .5% 0;
                     }
                 }
             }
