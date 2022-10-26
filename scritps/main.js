@@ -26,7 +26,11 @@ const tateti = document.getElementById("tatetigame");
 const dolarpy = document.getElementById("dolarpy");
 const calculadora = document.getElementById("calculadora");
 const covid19page = document.getElementById("covid19mundo");
+const finanzaspersonales = document.getElementById("finanzaspersonales");
 
+finanzaspersonales.addEventListener("click", ()=>{
+    window.open("https://presupuestopersonal.000webhostapp.com/", "_blank")
+})
 covid19page.addEventListener("click", ()=>{
     window.open("https://covid19cifras.netlify.app/", "_blank")
 })
